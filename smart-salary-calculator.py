@@ -7,8 +7,7 @@ from pyfiglet import Figlet
 f = Figlet()
 print(f.renderText('SALARY CALCULATOR'))
 print("This tool calculates your salary based on your monthly pay, working days per week, and hours worked per day.")
-print("⚠️ Warning: This calculator uses the actual number of working days in each month (based on your selected working days per week) to calculate salary proration and leave deductions. **Leave deductions are now based on your actual eligible working days for that month, not a fixed divisor.** Results may differ from calculations that use a fixed divisor (such as 30 or 26 days). Always check your company’s payroll policy for the official method.
-\n\n")
+print("⚠️ Warning: This calculator uses the actual number of working days in each month (based on your selected working days per week) to calculate salary proration and leave deductions. **Leave deductions are now based on your actual eligible working days for that month, not a fixed divisor.** Results may differ from calculations that use a fixed divisor (such as 30 or 26 days). Always check your company’s payroll policy for the official method. \n\n")
 
 
 def count_working_days(year: int, month: int, working_days_per_week: int) -> int:
