@@ -80,10 +80,26 @@ May 2025:
   → Prorated Gross: ₹29617.00
   → Deductions: ₹4038.68
   → Net Salary for May 2025: ₹25578.32
-
---- Final Salary Summary ---
-Reference hourly wage: ₹168.28
-Gross salary (prorated): ₹93787.17
-Total deductions: ₹6058.02
-Net salary: ₹87729.14
 ```
+### ❓ FAQ
+Q: Can I calculate salaries for past months?
+A: Yes! It supports joining date-based looping from the past up to today.
+
+Q: Will this handle 4-day work weeks?
+A: Currently supports 5 or 6 days/week. You can extend get_valid_int_input() to accept 4.
+
+Q: Can I export the output?
+A: Not yet, but you can redirect output using:
+   python salary_calculator_cli.py > salary_summary.txt
+
+   
+### 🌍 SEO Keywords (for discoverability)
+salary calculator Python, prorated salary script, calculate salary with leaves, half day salary deduction, joining date salary calculator, HR tool Python, freelance salary tracker, Python CLI payroll, part-time pay calculator, command-line salary calculator
+
+### 🤝 Contributing
+Pull requests welcome! Please open an issue to discuss major changes.
+
+
+### 🙌 Author
+Prasanna
+GitHub: [@DinoQuinten](https://github.com/DinoQuinten/)
