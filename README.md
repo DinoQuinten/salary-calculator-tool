@@ -81,6 +81,23 @@ May 2025:
   → Deductions: ₹4038.68
   → Net Salary for May 2025: ₹25578.32
 ```
+
+### Installation
+⚠️ Python 3.8+ required
+
+```shell
+bash
+Copy
+Edit
+git clone https://github.com/YOUR_USERNAME/salary-calculator-cli.git
+cd salary-calculator-cli
+python3 -m venv .venv
+source .venv/bin/activate  # On Windows: .venv\Scripts\activate
+pip install -r requirements.txt
+
+```
+
+
 ### ❓ FAQ
 Q: Can I calculate salaries for past months?
 A: Yes! It supports joining date-based looping from the past up to today.
@@ -91,6 +108,11 @@ A: Currently supports 5 or 6 days/week. You can extend get_valid_int_input() to 
 Q: Can I export the output?
 A: Not yet, but you can redirect output using:
    python salary_calculator_cli.py > salary_summary.txt
+
+### How to run
+```shell
+python salary_calculator_cli.py
+```
 
    
 ### 🌍 SEO Keywords (for discoverability)
