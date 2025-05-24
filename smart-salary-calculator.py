@@ -1,4 +1,3 @@
-
 from datetime import datetime, timedelta
 import calendar, questionary
 from pyfiglet import Figlet
@@ -48,14 +47,12 @@ def main():
         today = datetime.today()
 
         try:
-     
             show_monthly = questionary.select(
                 "Do you want to see monthly salary breakdowns?",
                 choices=["Yes", "No"]
             ).ask().lower() == "yes"
         except ImportError:
             show_monthly = input("Do you want to see monthly salary breakdowns? (y/n): ").strip().lower() in ["y", "yes"]
-
 
         hourly_wage = calculate_hourly_wage(monthly_pay, working_days_per_week, hours_per_day)
 
@@ -86,8 +83,16 @@ def main():
             month_salary = (working_days / total_working_days) * monthly_pay if total_working_days else 0
             gross_salary += month_salary
 
-            daily_wage = monthly_pay / (22 if working_days_per_week == 6 else 20)
-            month_deduction = (full_leaves + 0.5 * half_days) * daily_wage
+            # --- CHANGED LOGIC BELOW ---
+            effective_working_days = working_days  # For both joining and regular months
+            # Prevent division by zero
+            if effective_working_days == 0:
+                daily_wage = 0
+            else:
+                daily_wage = month_salary / effective_working_days
+
+            total_leave_days = min(full_leaves + 0.5 * half_days, effective_working_days)
+            month_deduction = total_leave_days * daily_wage
             total_deductions += month_deduction
 
             month_net_salary = month_salary - month_deduction

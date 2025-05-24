@@ -18,7 +18,7 @@
 
 ## ⚠️ Warning:
 
-This calculator uses the actual number of working days in each month (based on your selected working days per week) to calculate salary proration and leave deductions. Results may differ from calculations that use a fixed divisor (such as 30 or 26 days). Always check your company’s payroll policy for the official method.
+This calculator uses the actual number of working days in each month (based on your selected working days per week) to calculate salary proration and leave deductions. **Leave deductions are now based on your actual eligible working days for that month, not a fixed divisor.** Results may differ from calculations that use a fixed divisor (such as 30 or 26 days). Always check your company’s payroll policy for the official method.
 
 ---
 
@@ -30,86 +30,49 @@ This calculator uses the actual number of working days in each month (based on y
 - Startups or small businesses without complex HR software
 
 ---
+
 ## 🧮 Salary Calculator – Logic Overview
+
 This script calculates your net salary for each month, considering your joining date, leaves taken, and working schedule. Here’s how it works:
 
 #### 1. User Inputs
 - Monthly Pay: Your gross monthly salary.
-
 - Working Days per Week: How many days you work each week (typically 5 or 6).
-
 - Hours Worked per Day: Your daily working hours.
-
 - Joining Date: The date you started your job.
-
 - Leave Details: For each month (from joining to current), you enter the number of full and half-day leaves.
 
 #### 2. Working Days Calculation
 - The script calculates the total number of working days in each month, based on your working days per week (Mon–Fri or Mon–Sat).
-
 - For your joining month, it only counts working days from your joining date to the end of that month.
 
 #### 3. Salary Proration
 - For the joining month, your gross salary is prorated based on the number of eligible working days.
-
 - For subsequent months, the full monthly salary is considered.
 
-#### 4. Leave Deductions
+#### 4. Leave Deductions (NEW LOGIC)
 - For each month, you enter how many full and half-day leaves you took.
-
-- The script calculates your per-day wage (using 22 days for a 6-day week or 20 for a 5-day week).
-
+- The script calculates your per-day wage as:  
+  **Per-day wage = Prorated monthly salary / actual eligible working days in that month**
 - Deduction = (Full Leaves + 0.5 × Half-Days) × Per-Day Wage
-
 - Deductions are capped so you can't be deducted for more days than you could have worked.
 
 #### 5. Net Salary Calculation
 - Net Salary = Prorated Gross Salary – Deductions
-
 - The script shows a breakdown for each month (if you choose), and a final summary including:
-
-- Reference hourly wage
-
-- Total gross salary (prorated)
-
-- Total deductions
-
-- Net salary
+  - Reference hourly wage
+  - Total gross salary (prorated)
+  - Total deductions
+  - Net salary
 
 #### 6. Monthly Breakdown (Optional)
 - You can opt to see detailed monthly breakdowns, which include gross, deductions, and net pay for each month.
 
-- Example Calculation
-- Suppose you:
-
-- Join on March 17, 2025
-
-- Work 6 days/week, 8 hours/day
-
-- Monthly pay is ₹39,618
-
-- Take 1 full leave and 1 half-day in March
-
-- The script will:
-
-- Count working days from March 17–31
-
-Prorate your salary for those days
-
-- Deduct your leave days at the calculated per-day rate
-
-- Display your net salary for March and each following month
-
-- Key Points
-- Flexible: Works for any joining date, working schedule, and leave pattern.
-
-- Accurate: Prorates salary for partial months and deducts leaves precisely.
-
-- Interactive: Guides you step-by-step for easy data entry.
-
-
 ---
+
 ## 🖥️ Demo
+
+
 
 ```shell
  ____    _    _        _    ______   __
