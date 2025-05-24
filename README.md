@@ -82,43 +82,67 @@ May 2025:
   → Net Salary for May 2025: ₹25578.32
 ```
 
-### Installation
+---
+
+## 🛠️ Installation
+
 ⚠️ Python 3.8+ required
 
 ```shell
-git clone https://github.com/YOUR_USERNAME/salary-calculator-cli.git
-cd salary-calculator-cli
+git clone https://github.com/DinoQuinten/salary-calculator-tool.git
+cd salary-calculator-tool
 python3 -m venv .venv
 source .venv/bin/activate  # On Windows: .venv\Scripts\activate
 pip install -r requirements.txt
-
 ```
 
+---
 
-### ❓ FAQ
-Q: Can I calculate salaries for past months?
+## ❓ FAQ
+
+**Q: Can I calculate salaries for past months?**  
 A: Yes! It supports joining date-based looping from the past up to today.
 
-Q: Will this handle 4-day work weeks?
-A: Currently supports 5 or 6 days/week. You can extend get_valid_int_input() to accept 4.
+**Q: Will this handle 4-day work weeks?**  
+A: Currently supports 5 or 6 days/week. You can extend `get_valid_int_input()` to accept 4.
 
-Q: Can I export the output?
-A: Not yet, but you can redirect output using:
-   python salary_calculator_cli.py > salary_summary.txt
+**Q: Can I export the output?**  
+A: Not yet, but you can redirect output using:  
+   `python smart-salary-calculator.py > salary_summary.txt`
 
-### How to run
+---
+
+## ▶️ How to run
+
+By default, the main script is named `smart-salary-calculator.py`.  
+If you prefer the name `salary_calculator_cli.py`, you can rename it:
+
 ```shell
+mv smart-salary-calculator.py salary_calculator_cli.py
 python salary_calculator_cli.py
 ```
 
-   
-### 🌍 SEO Keywords (for discoverability)
+Or simply run:
+
+```shell
+python smart-salary-calculator.py
+```
+
+---
+
+## 🌍 SEO Keywords (for discoverability)
+
 salary calculator Python, prorated salary script, calculate salary with leaves, half day salary deduction, joining date salary calculator, HR tool Python, freelance salary tracker, Python CLI payroll, part-time pay calculator, command-line salary calculator
 
-### 🤝 Contributing
+---
+
+## 🤝 Contributing
+
 Pull requests welcome! Please open an issue to discuss major changes.
 
+---
 
-### 🙌 Author
-Prasanna
+## 🙌 Author
+
+Prasanna  
 GitHub: [@DinoQuinten](https://github.com/DinoQuinten/)
