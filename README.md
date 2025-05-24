@@ -16,6 +16,12 @@
 
 ---
 
+## ⚠️ Warning:
+
+This calculator uses the actual number of working days in each month (based on your selected working days per week) to calculate salary proration and leave deductions. Results may differ from calculations that use a fixed divisor (such as 30 or 26 days). Always check your company’s payroll policy for the official method.
+
+---
+
 ## 🎯 Use Cases
 
 - HR teams calculating **new joiner or exit month salaries**
