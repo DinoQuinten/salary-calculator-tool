@@ -87,6 +87,10 @@ This script calculates your net salary for each month, considering your joining 
 | |___ / ___ \| |__| |___| |_| | |___ / ___ \| || |_| |  _ < 
  \____/_/   \_\_____\____|\___/|_____/_/   \_\_| \___/|_| \_\
                                                              
+This tool calculates your salary based on your monthly pay, working days per week, and hours worked per day.
+⚠️ Warning: This calculator uses the actual number of working days in each month (based on your selected working days per week) to calculate salary proration and leave deductions. Results may differ from calculations that use a fixed divisor (such as 30 or 26 days). Always check your company’s payroll policy for the official method.
+
+
 
 Enter your monthly pay (in ₹): 29617
 Enter the number of working days per week (e.g., 5 or 6): 6
@@ -95,7 +99,7 @@ Enter hours worked per day (1–24): 8
 Monthly Pay: ₹29617.0
 Working Days/Week: 6
 Hours Per Day: 8
-Enter your joining date (DD-MM-YYYY): 25-02-2025
+Enter your joining date (DD-MM-YYYY): 24-02-2025
 ? Do you want to see monthly salary breakdowns? Yes
 
 Enter leave details for each month (from joining to current):
@@ -103,9 +107,9 @@ Enter leave details for each month (from joining to current):
 February 2025:
   Number of full leave days: 0
   Number of half-days: 0
-  → Prorated Gross: ₹4936.17
+  → Prorated Gross: ₹6170.21
   → Deductions: ₹0.00
-  → Net Salary for February 2025: ₹4936.17
+  → Net Salary for February 2025: ₹6170.21
 
 March 2025:
   Number of full leave days: 0
@@ -115,18 +119,24 @@ March 2025:
   → Net Salary for March 2025: ₹29617.00
 
 April 2025:
-  Number of full leave days: 1
-  Number of half-days: 1
-  → Prorated Gross: ₹29617.00
-  → Deductions: ₹2019.34
-  → Net Salary for April 2025: ₹27597.66
-
-May 2025:
   Number of full leave days: 2
   Number of half-days: 2
   → Prorated Gross: ₹29617.00
-  → Deductions: ₹4038.68
-  → Net Salary for May 2025: ₹25578.32
+  → Deductions: ₹3417.35
+  → Net Salary for April 2025: ₹26199.65
+
+May 2025:
+  Number of full leave days: 1
+  Number of half-days: 1
+  → Prorated Gross: ₹29617.00
+  → Deductions: ₹1645.39
+  → Net Salary for May 2025: ₹27971.61
+
+--- Final Salary Summary ---
+Reference hourly wage: ₹168.28
+Gross salary (prorated): ₹95021.21
+Total deductions: ₹5062.74
+Net salary: ₹89958.47
 ```
 
 ---
